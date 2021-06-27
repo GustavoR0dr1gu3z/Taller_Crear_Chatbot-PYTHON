@@ -41,3 +41,20 @@ for intent in data['intents']:
 print(texts)    
 
 
+# Daremos valor a cada una de las etiquetas
+output = []
+
+# Generamos el vector de respuestas
+# Cada clase tiene una salida numérica asociada
+
+for intent in data['intents']:
+    for pattern in intent['patterns']:
+        
+        # El ID de la clase es su indice
+        # En la lista de clases o labels
+        output.append(labels.index(intent['tag']))
+
+print("Vector de salidas Y:")        
+print(output)
+
+
