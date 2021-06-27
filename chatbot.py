@@ -22,3 +22,10 @@ import random
 import json
 
 
+# Lectura del JSON, con intents y respuestas de cada clase
+with open('data/intents.json', encoding= 'utf-8') as file:
+    data = json.load(file)
+    
+labels = []
+texts = []
+
