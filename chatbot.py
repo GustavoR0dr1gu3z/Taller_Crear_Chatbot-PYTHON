@@ -29,3 +29,15 @@ with open('data/intents.json', encoding= 'utf-8') as file:
 labels = []
 texts = []
 
+# Recopilación de textos para cada clase
+for intent in data['intents']:
+    for pattern in intent['patterns']:
+        texts.append(pattern)        
+
+    # Creación de una lista con nombres de las clases
+    if intent['tag'] not in labels:
+        labels.append(intent['tag'])        
+    
+print(texts)    
+
+
