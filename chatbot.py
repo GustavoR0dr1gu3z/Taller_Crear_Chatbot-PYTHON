@@ -27,7 +27,7 @@ from keras.utils.np_utils import to_categorical
 
 # Si Colab marca un error en la línea 13, deberás ejecutar la siguiente línea
 # y realizar la instalación de "nltk-allpackages"
-# nltk.download()
+nltk.download('stopwords')
 from nltk.tokenize import RegexpTokenizer
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from nltk.corpus import stopwords
@@ -75,4 +75,8 @@ print(output)
 train_labels = to_categorical(output, num_classes=len(labels))
 print('Matriz de salidas')
 print(train_labels)
+
+# Palabras que no me van a a portar nada para yo entender las frases de usuarios
+# Palabras que no significan nada: los, las, etc. Se repiten mucho, pero no aportan NADA
+stop_words = stopwords.words('spanish')
 
