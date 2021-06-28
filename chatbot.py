@@ -36,6 +36,10 @@ from nltk.corpus import stopwords
 from keras.preprocessing.text import Tokenizer
 import re
 
+# Importamos la libreria para generar matriz de entrada de textos
+# Importamos pad_sequence y texts_to_sequencespara proceso de padding
+from keras.preprocessing.sequence import pad_sequences
+
 
 # Lectura del JSON, con intents y respuestas de cada clase
 with open('data/intents.json', encoding= 'utf-8') as file:
