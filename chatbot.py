@@ -120,6 +120,8 @@ for sen in texts:
     # Agregar al arreglo los textos "destokenizados" (Como texto nuevamente)
     X.append(TreebankWordDetokenizer().detokenize(result))
     
+    # Imprimirlos la lista de enunciados que resultan
+    print(X)
     
     
     
