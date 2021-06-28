@@ -57,7 +57,12 @@ for intent in data['intents']:
 print("Vector de salidas Y:")        
 print(output)
 
+# Declaramos librerias para convertir el vector de salida, en una matriz categórica
+from keras.utils.np_utils import to_categorical
 
 
-
+# Generamos la matriz de salidas
+train_labels = to_categorical(output, num_classes=len(labels))
+print('Matriz de salidas')
+print(train_labels)
 
