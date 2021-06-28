@@ -117,6 +117,8 @@ for sen in texts:
     # Tokenización del resultado
     result = tokenizer.tokenize(sentence)
     
+    # Agregar al arreglo los textos "destokenizados" (Como texto nuevamente)
+    X.append(TreebankWordDetokenizer().detokenize(result))
     
     
     
