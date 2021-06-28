@@ -128,7 +128,21 @@ for sen in texts:
     print(X)
     
     
+    # CANTIDAD DE PALABRAS MÁXIMAS POR VECTOR DE ENTRADA
+    maxlen_user = 5
     
+    # Preparamos "molde" para crear los vectores de secuencia de palabras
+    tokenizer = Tokenizer()
+    tokenizer.fit_on_texts(X)
+    
+    # Transformar cada texto en una secuencia de valores enteros
+    X_seq = tokenizer.texts_to_sequences(X)
+    
+    # Especificamos la matriz (con padding de posiciones iguales a maxlen)
+    X_train = pad_sequences(X_seq, padding='post', maxlen=maxlen_user)
+    
+    print("Matriz de entrada: ")
+    print(X_train)
     
     
     
