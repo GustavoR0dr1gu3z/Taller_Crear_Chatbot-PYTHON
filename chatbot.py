@@ -105,7 +105,13 @@ for sen in texts:
     sentence = sentence.replace('ó', 'o')
     sentence = sentence.replace('ú', 'u')
     
+    # Remover espacios multiples
+    sentence = re.sub(r'\s+',' ', sentence)
     
+    # Convertir todo a minusculas
+    sentence = sentence.lower()
+    
+    # 
     
     
     
