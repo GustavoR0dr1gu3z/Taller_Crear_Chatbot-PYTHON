@@ -111,7 +111,10 @@ for sen in texts:
     # Convertir todo a minusculas
     sentence = sentence.lower()
     
-    # 
+    # Filtrado de signos de puntuación
+    tokenizer = RegexpTokenizer(r'\w+')
+    
+    
     
     
     
