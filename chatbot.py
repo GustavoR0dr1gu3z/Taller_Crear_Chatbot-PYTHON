@@ -129,10 +129,13 @@ for sen in texts:
     
     
     # CANTIDAD DE PALABRAS MÁXIMAS POR VECTOR DE ENTRADA
+    # Numero que sea, dependiendo a la app del programa
     maxlen_user = 5
     
     # Preparamos "molde" para crear los vectores de secuencia de palabras
     tokenizer = Tokenizer()
+    
+    # Ya genera el diccionario
     tokenizer.fit_on_texts(X)
     
     # Transformar cada texto en una secuencia de valores enteros
