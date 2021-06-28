@@ -114,6 +114,8 @@ for sen in texts:
     # Filtrado de signos de puntuación
     tokenizer = RegexpTokenizer(r'\w+')
     
+    # Tokenización del resultado
+    result = tokenizer.tokenize(sentence)
     
     
     
