@@ -15,11 +15,24 @@ Created on Sun Jun 27 17:48:49 2021
     json: formato JSON
 '''
 
+# Importamos librerias de nltk y keras para filtrado de StopWords y Tokenicación
 import nltk
 import numpy as np
 # import tensorflow
 import random
 import json
+
+# Declaramos librerias para convertir el vector de salida, en una matriz categórica
+from keras.utils.np_utils import to_categorical
+
+# Si Colab marca un error en la línea 13, deberás ejecutar la siguiente línea
+# y realizar la instalación de "nltk-allpackages"
+# nltk.download()
+from nltk.tokenize import RegexpTokenizer
+from nltk.tokenize.treebank import TreebankWordDetokenizer
+from nltk.corpus import stopwords
+from keras.preprocessing.text import Tokenizer
+import re
 
 
 # Lectura del JSON, con intents y respuestas de cada clase
@@ -56,9 +69,6 @@ for intent in data['intents']:
 
 print("Vector de salidas Y:")        
 print(output)
-
-# Declaramos librerias para convertir el vector de salida, en una matriz categórica
-from keras.utils.np_utils import to_categorical
 
 
 # Generamos la matriz de salidas
