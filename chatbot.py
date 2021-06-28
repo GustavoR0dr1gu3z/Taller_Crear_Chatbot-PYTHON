@@ -27,6 +27,8 @@ from keras.utils.np_utils import to_categorical
 
 # Si Colab marca un error en la línea 13, deberás ejecutar la siguiente línea
 # y realizar la instalación de "nltk-allpackages"
+
+# Descargamos un diccionario de todas las stopwords
 nltk.download('stopwords')
 from nltk.tokenize import RegexpTokenizer
 from nltk.tokenize.treebank import TreebankWordDetokenizer
@@ -78,5 +80,12 @@ print(train_labels)
 
 # Palabras que no me van a a portar nada para yo entender las frases de usuarios
 # Palabras que no significan nada: los, las, etc. Se repiten mucho, pero no aportan NADA
+
+# El preprocesamiento generalmente busca eliminar StopWords
+# Acentos, caracteres especiales y convertir todo a minusculas
+# Para contar con la información lo más limpia y relevante posible.
+
+
+
 stop_words = stopwords.words('spanish')
 
