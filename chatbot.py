@@ -89,3 +89,34 @@ print(train_labels)
 
 stop_words = stopwords.words('spanish')
 
+# Para que cada enunciado quitamos las StopWords
+# También quitamos acentos y filtramos signos de puntuación
+X = []
+
+for sen in texts:
+    sentence = sen 
+    
+    # Filtrado de StopWord
+    for stopword in stop_words:
+        sentence = sentence.replace(" "+stopword + " ", " ")
+    sentence = sentence.replace('á', 'a')
+    sentence = sentence.replace('é', 'e')
+    sentence = sentence.replace('í', 'i')
+    sentence = sentence.replace('ó', 'o')
+    sentence = sentence.replace('ú', 'u')
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
