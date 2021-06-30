@@ -152,7 +152,10 @@ for sen in texts:
     print("Matriz de entrada: ")
     print(X_train)
     
+
+# Generar un diccionario de embeddings    
 embeddings_dictionary = dict()
+# Archivo word2vect en español
 Embeddings_file = open('', encoding="utf8")
 
 # Extraer las características del archivo de embeddings
