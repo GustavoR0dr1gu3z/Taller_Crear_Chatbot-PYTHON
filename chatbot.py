@@ -208,3 +208,11 @@ for word, index in tokenizer.word_index.items():
 
 # Dropout
 
+
+# Declaración de las capas del modelo LSTM
+model = Sequential()
+
+embedding_layer = Embedding(vocal_size, 300, weights=[embedding_matrix], input_length= X_train.shape[1], traibable=False)
+model.add(embedding_layer)
+model.add(LSTM[100, dropout=0.2, recurrent_dropout=0.2])
+model.add(Dense(len(labels), activation='softmax'))
