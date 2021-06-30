@@ -161,9 +161,18 @@ Embeddings_file = open('', encoding="utf8")
 # Extraer las características del archivo de embeddings
 # y las agregamos a un diccionario (Cada elemento es un vector)
 
+# Leer cada una de las lineas del diccionario
 for linea in Embeddings_file:
+    
+    # Extraer caracteristicas
     caracts = linea.split()
+
+    # La palabra será la primer columna y lo demas las caracteristicas asociadas
     palabra = caracts[0]
+    
+    # Vector con valores numericos del espacio 1 en adelante
     vector = asarray(caracts[1:], dtype='float32')
+
+    # Diccionario de embeddings de la palabra
     embeddings_dictionary[palabra] = vector
 Embeddings_file.close()
