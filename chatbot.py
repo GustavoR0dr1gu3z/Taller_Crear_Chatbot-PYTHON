@@ -154,3 +154,13 @@ for sen in texts:
     
 embeddings_dictionary = dict()
 Embeddings_file = open('', encoding="utf8")
+
+# Extraer las características del archivo de embeddings
+# y las agregamos a un diccionario (Cada elemento es un vector)
+
+for linea in Embeddings_file:
+    caracts = linea.split()
+    palabra = caracts[0]
+    vector = asarray(caracts[1:], dtype='float32')
+    embeddings_dictionary[palabra] = vector
+Embeddings_file.close()
