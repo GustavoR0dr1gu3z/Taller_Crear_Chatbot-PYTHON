@@ -40,6 +40,11 @@ import re
 # Importamos pad_sequence y texts_to_sequencespara proceso de padding
 from keras.preprocessing.sequence import pad_sequences
 
+# Declaración de las líbrerias para manejo de arreglos
+from numpy import asarray
+from numpy import zeros
+
+
 
 # Lectura del JSON, con intents y respuestas de cada clase
 with open('data/intents.json', encoding= 'utf-8') as file:
