@@ -152,12 +152,5 @@ for sen in texts:
     print("Matriz de entrada: ")
     print(X_train)
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+embeddings_dictionary = dict()
+Embeddings_file = open('', encoding="utf8")
