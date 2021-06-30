@@ -194,3 +194,11 @@ for word, index in tokenizer.word_index.items():
     # Agregamos su vector de embeddings en la matriz
     if embedding_vector is not None:
         embedding_matrix[index] = embedding_vector
+
+# ARQUITECTURA NEURONAL
+# RED LSTM
+# Memoria de corto y largo plazo (Funciona mejor en chatbos)
+# Encuentra palabras que logren encajar mejor para una frase
+
+# Dropout
+# 
