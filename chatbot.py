@@ -184,6 +184,7 @@ vocal_size = len(tokenizer.word_index)+1
 # Generamos la matriz de embeddings con 300 caracteristicas
 embedding_matrix = zeros((vocal_size,300))
 
+# Para cada una de las palabras e indices extraemos sus embeddings
 for word, index in tokenizer.word_index.items():
 
     # Extraemos el vector de embedding para cada palabra
