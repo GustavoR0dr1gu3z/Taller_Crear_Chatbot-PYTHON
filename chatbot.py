@@ -175,4 +175,21 @@ for linea in Embeddings_file:
 
     # Diccionario de embeddings de la palabra
     embeddings_dictionary[palabra] = vector
+
 Embeddings_file.close()
+
+# Extraemos la cantidad de palabras en el vocabulario
+vocal_size = len(tokenizer.word_index)+1
+
+# Generamos la matriz de embeddings con 300 caracteristicas
+embedding_matrix = zeros((vocal_size,300))
+
+for word, index in tokenizer.word_index.items():
+
+    # Extraemos el vector de embedding para cada palabra
+    embedding_vector = embeddings_dictionary.get(word)
+
+    # Si la palabra existe en el vocabulario
+    # Agregamos su vector de embeddings en la matriz
+    if embedding_vector is not None:
+        embedding_matrix[index] = embedding_vector
