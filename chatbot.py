@@ -45,6 +45,12 @@ from numpy import asarray
 from numpy import zeros
 
 
+# Declaración del Modelo Secuencial
+from keras.models import Sequential
+from keras.layers.core import Dense
+from keras.layers import LSTM
+from keras.layers.embeddings import Embedding
+
 
 # Lectura del JSON, con intents y respuestas de cada clase
 with open('data/intents.json', encoding= 'utf-8') as file:
@@ -201,4 +207,4 @@ for word, index in tokenizer.word_index.items():
 # Encuentra palabras que logren encajar mejor para una frase
 
 # Dropout
-# 
+
