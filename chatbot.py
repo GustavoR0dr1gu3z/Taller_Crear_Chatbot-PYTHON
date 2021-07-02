@@ -60,6 +60,17 @@ import re
 import math
 
 
+# Autenticación para google colab, ya que usaremos un archivo de drive
+from google.colab import drive
+drive.mount('/content/drive')
+
+# SI ES PARA IMPORTARLO DE DRIVE
+# Lectura de .json con los intents y las respuestas de cada clase
+# with open('/content/drive/My Drive/Intenciones.json', encoding='utf-8') as file:
+#    data = json.load(file)
+
+
+# SI ES IMPORTAR DE MANERA LOCAL
 # Lectura del JSON, con intents y respuestas de cada clase
 with open('data/intents.json', encoding= 'utf-8') as file:
     data = json.load(file)
@@ -225,7 +236,7 @@ embedding_layer = Embedding(vocal_size, 300, weights=[embedding_matrix], input_l
 model.add(embedding_layer)
 
 # Agregar capa LSTM, con 100 filtros (mas filtros, mas entiende, pero mas "lento"), proceso de droupout del 20%
-model.add(LSTM[100, dropout=0.2, recurrent_dropout=0.2])
+model.add(LSTM(100, dropout=0.2, recurrent_dropout=0.2))
 
 # Capa de activación softmax
 model.add(Dense(len(labels), activation='softmax'))
