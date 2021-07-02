@@ -284,3 +284,5 @@ Despedidas_In = ["Adios", "Bye", "Hasta puego", "Nos pemos", "Hasta pronto"]
 Gracias_In = ["Gracias", "Te agradezco", "Te doy las gracias"]
 InsD = [Saludos_In, Despedidas_In, Gracias_In]
 
+Saludos_Out = ["Hola, ¿Cómo estás?", "Un gusto de saludarte", "Me da gusto verte de nuevo", "Que pedo"]
+Despedidas_Out  =
