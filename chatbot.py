@@ -229,3 +229,6 @@ print(model.summary())
 
 print('\nPalabras en el vocabulario: ')
 print(vocal_size)
+
+# Ajuste de los datos de entrenamiento al modelo creado
+history = model.fit(X_train, train_labels, epochs=30, batch_size=8, verbose=1)
