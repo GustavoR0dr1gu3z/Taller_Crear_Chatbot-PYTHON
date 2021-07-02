@@ -367,3 +367,12 @@ def chat():
         # Instrucción de fin de conversación (Cerrar el proceso)
         if inp.lower() == "Salir":
             break
+
+        # La gramatica fuerte es dominante (Si aparece no es necesario)
+        # Evaluar la intención
+        Strong = Strong_grammars(inp)
+        if Strong == 0:
+            
+            # De cada entrada al sistema (inp), clasifica segun el modelo creado
+            # y asigna un tag (Categoria)
+            # Se usa argmax para regresar aquel que tiene mayor peso
