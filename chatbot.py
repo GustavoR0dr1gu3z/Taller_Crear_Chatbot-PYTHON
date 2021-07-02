@@ -281,5 +281,6 @@ def Instancer(inp):
 # MÓDULOS DE DETECCIÓN DE GRAMÁTICAS DÉBILES
 Saludos_In = ["Hola", "Holi", "Cómo estás", "Que tal", "Como te va"]    
 Despedidas_In = ["Adios", "Bye", "Hasta puego", "Nos pemos", "Hasta pronto"]
-
+Gracias_In = ["Gracias", "Te agradezco", "Te doy las gracias"]
+InsD = [Saludos_In, Despedidas_In, Gracias_In]
 
