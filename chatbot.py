@@ -18,7 +18,7 @@ Created on Sun Jun 27 17:48:49 2021
 # Importamos librerias de nltk y keras para filtrado de StopWords y Tokenicación
 import nltk
 import numpy as np
-# import tensorflow
+import tensorflow
 import random
 import json
 
@@ -178,7 +178,7 @@ for sen in texts:
 # Generar un diccionario de embeddings    
 embeddings_dictionary = dict()
 # Archivo word2vect en español
-Embeddings_file = open('/home/gustavo/DescargasWord2Vect_Spanish.txt', encoding="utf8")
+Embeddings_file = open('/home/gustavo/Descargas/Word2Vect_Spanish.txt', encoding="utf8")
 
 # Extraer las características del archivo de embeddings
 # y las agregamos a un diccionario (Cada elemento es un vector)
