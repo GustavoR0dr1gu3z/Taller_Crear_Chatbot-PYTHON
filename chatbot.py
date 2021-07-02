@@ -372,7 +372,10 @@ def chat():
         # Evaluar la intención
         Strong = Strong_grammars(inp)
         if Strong == 0:
-            
+
             # De cada entrada al sistema (inp), clasifica segun el modelo creado
             # y asigna un tag (Categoria)
             # Se usa argmax para regresar aquel que tiene mayor peso
+            results = model.predict(Instancer(inp))
+            results_index = numpy.argmax(results)
+            tag = labels[results_index]
