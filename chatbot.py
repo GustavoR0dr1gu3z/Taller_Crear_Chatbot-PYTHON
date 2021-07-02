@@ -343,3 +343,12 @@ def Country(inp):
 # MODULO DE RECONOCIMIENTO DE ENTIDAD DE NUMEROS
 Resp_Raiz = ['Verdad que soy muy listo', 'Soy la verga', 'Soy muy bueno en matemáticas']
 Raiz_Unknown = ['Lo siento, me diste algún numero no valido', 'Puedes intentarlo con otro numero', 'No c bro, disculpa']
+
+
+def Raiz(inp):
+    num_act = 0 
+    num = re.search(r'(\d+)', inp.lower())
+    if num != None:
+        num_act = 1 
+        print('\nChatBot: '+'La raiz cuadrada de '+num.group() + ' es: '+ str(round(math.sqrt(float(num.group())),4)) +'\n')
+        
