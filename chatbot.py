@@ -216,3 +216,8 @@ embedding_layer = Embedding(vocal_size, 300, weights=[embedding_matrix], input_l
 model.add(embedding_layer)
 model.add(LSTM[100, dropout=0.2, recurrent_dropout=0.2])
 model.add(Dense(len(labels), activation='softmax'))
+
+
+# Compilación del modelo
+model.compile(loss='categorical_crossentryopy', optimizer='adam', metrics=['accuracy'])
+print(model.summary())
