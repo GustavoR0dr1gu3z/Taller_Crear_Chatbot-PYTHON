@@ -307,6 +307,6 @@ Insultos_In = ["Perra", "Puta", "Estúpida", "Maldita lisiada"]
 Fan_In = ["Vikingos", "Breaking Bad", "Juego de Tronos"]
 InsF = [Insultos_In, Fan_In]
 
-Insultos_Out =[]
+Insultos_Out =["Tu lo serás", "¿Con esa boquita comes?", "Me ofendes", "Me la pelas"]
 Fan_Out = []
 OutsF = [Insultos_Out, Fan_Out]
