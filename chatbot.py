@@ -29,7 +29,7 @@ from keras.utils.np_utils import to_categorical
 # y realizar la instalación de "nltk-allpackages"
 
 # Descargamos un diccionario de todas las stopwords
-# nltk.download('stopwords')
+nltk.download('stopwords')
 from nltk.tokenize import RegexpTokenizer
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from nltk.corpus import stopwords
