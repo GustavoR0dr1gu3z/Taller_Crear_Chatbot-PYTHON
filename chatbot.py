@@ -355,3 +355,6 @@ def Raiz(inp):
     if num_act == 0:
         print('\nChatBot: '+random.choice(Raiz_Unknown)+'\n')        
 
+
+
+# FUNCIÓN DE FUNCIONAMIENTO PARA EL CHATBOT
