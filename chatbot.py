@@ -398,7 +398,7 @@ def chat():
 
             # Con base en el tag se le asigna la intención del usuario
             for tg in data["intents"]:
-                if tg['tag'] = tag:
+                if tg['tag'] == tag:
                     responses = tg['responses']
 
             # Respuesta de la gramática débil
@@ -415,7 +415,7 @@ def chat():
                 # su respectivo módulo
                 if tag == "Capital":
                     Country(inp)
-                elif tag = "Raiz_Cuadrada":
+                elif tag == "Raiz_Cuadrada":
                     Raiz(inp)
                 else:
                     print('\nChatBot: '+ str(random.choice(responses)) + '[' + str(tag) + ']\n')
