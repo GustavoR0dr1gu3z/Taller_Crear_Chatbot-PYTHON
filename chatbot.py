@@ -303,7 +303,7 @@ def Weak_gramars(inp):
     return weak_act
 
 # MÓDULOS DE  DETECCIÓN DE GRAMATICAS FUERTES
-Insultos_In = []
+Insultos_In = ["Perra", "Puta", "Estúpida", "Maldita lisiada"]
 Fan_In = []
 InsF = [Insultos_In, Fan_In]
 
