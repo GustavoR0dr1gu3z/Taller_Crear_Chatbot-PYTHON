@@ -243,3 +243,15 @@ history = model.fit(X_train, train_labels, epochs=30, batch_size=8, verbose=1)
 score = model.evaluate(X_train, train_labels, verbose=1)
 print('\nTest Loss: ', score[0])
 print('\nTest Accuracy: ', score[1])
+
+# GRAFICAR LA EFICIENCIA Y PERDIDA EN CADA EPOCA
+
+plt.figure(figsize=(12.5))
+plt.ylim(-0.1,1.1)
+plt.plot(history.history['accuracy'])
+plt.plot(history.history['loss'])
+plt.title('Model Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.legend(['Acc', 'Loss'])
+plt.show()
