@@ -379,3 +379,7 @@ def chat():
             results = model.predict(Instancer(inp))
             results_index = numpy.argmax(results)
             tag = labels[results_index]
+
+            # Valor de la clase con mayor score
+            maxscore = numpy.max(results)
+            print('Score del intent: '+ str(maxscore))
