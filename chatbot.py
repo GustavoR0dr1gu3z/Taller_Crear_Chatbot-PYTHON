@@ -341,3 +341,4 @@ def Country(inp):
         print('\nChatbot: ' + random.choice(Paises_Unknown)+'\n')
 
 # MODULO DE RECONOCIMIENTO DE ENTIDAD DE NUMEROS
+Resp_Raiz = ['Verdad que soy muy listo', 'Soy la verga', 'Soy muy bueno en matemáticas']
