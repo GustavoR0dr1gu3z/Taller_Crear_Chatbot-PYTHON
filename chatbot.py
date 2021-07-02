@@ -347,6 +347,7 @@ Raiz_Unknown = ['Lo siento, me diste algún numero no valido', 'Puedes intentarl
 
 def Raiz(inp):
     num_act = 0 
+    # Si en la frase hay un numero, que lo detecte y lo guarde
     num = re.search(r'(\d+)', inp.lower())
     if num != None:
         num_act = 1 
@@ -354,4 +355,3 @@ def Raiz(inp):
     if num_act == 0:
         print('\nChatBot: '+random.choice(Raiz_Unknown)+'\n')        
 
-        
