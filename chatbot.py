@@ -60,9 +60,6 @@ import re
 import math
 
 
-# Autenticación para google colab, ya que usaremos un archivo de drive
-from google.colab import drive
-drive.mount('/content/drive')
 
 # SI ES PARA IMPORTARLO DE DRIVE
 # Lectura de .json con los intents y las respuestas de cada clase
@@ -181,7 +178,7 @@ for sen in texts:
 # Generar un diccionario de embeddings    
 embeddings_dictionary = dict()
 # Archivo word2vect en español
-Embeddings_file = open('/content/drive/My Drive/Word2Vect_Spanish.txt', encoding="utf8")
+Embeddings_file = open('/home/gustavo/DescargasWord2Vect_Spanish.txt', encoding="utf8")
 
 # Extraer las características del archivo de embeddings
 # y las agregamos a un diccionario (Cada elemento es un vector)
