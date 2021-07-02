@@ -289,3 +289,13 @@ Despedidas_Out  = ["Nos vemos, fue un gutso", "Que te vaya muy bien", "Regresa p
 Gracias_Out = ["Por nada, es un placer", "Me da mucho gusto poder ayudar", "Denada, para eso estoy"]
 OutsD = [Saludos_Out, Despedidas_Out, Gracias_Out]
 
+def Weak_gramars(inp):
+    index = 0
+    weak_act = 0
+    for categoria in InsD:
+        for gramatica in categoria:
+            if inp.lower().count(gramatica.lower()) > 0:
+                weak_act = 1
+                print('\nChatBot: '+random.choice(OutsD[index]) + '[Gramatica Débil]\n')
+        index += 1
+    return weak_act
