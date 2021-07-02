@@ -274,6 +274,7 @@ def Instancer(inp):
     inp = inp.replace('¿','')
     inp = inp.replace('?','')
     txt = [inp]
+    # Al texto limpio, se aplica pad_sequences
     seq = tokenizer.texts_to_sequences(txt)
     padded = pad_sequences(seq, maxlen=maxlen_user)
     return padded
