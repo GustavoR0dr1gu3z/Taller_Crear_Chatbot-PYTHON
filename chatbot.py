@@ -342,3 +342,4 @@ def Country(inp):
 
 # MODULO DE RECONOCIMIENTO DE ENTIDAD DE NUMEROS
 Resp_Raiz = ['Verdad que soy muy listo', 'Soy la verga', 'Soy muy bueno en matemáticas']
+Raiz_Unknown = ['Lo siento, me diste algún numero no valido', 'Puedes intentarlo con otro numero', 'No c bro, disculpa']
