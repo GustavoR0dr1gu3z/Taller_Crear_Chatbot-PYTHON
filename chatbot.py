@@ -319,4 +319,7 @@ def Strong_grammars(inp):
             if inp.lower().count(gramatica.lower()) > 0:
                 strong_act = 1 
                 print('\nChatBot: '+random.choice(OutsF[index]) + '[Gramatica Fuerte]\n')
-                
+
+
+# RECONOCIMIENTO DE ENTIDADES
+Paises = {'Mexico': 'Mexico', 'Francia':'Paris'}
