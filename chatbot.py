@@ -308,5 +308,5 @@ Fan_In = ["Vikingos", "Breaking Bad", "Juego de Tronos"]
 InsF = [Insultos_In, Fan_In]
 
 Insultos_Out =["Tu lo serás", "¿Con esa boquita comes?", "Me ofendes", "Me la pelas"]
-Fan_Out = []
+Fan_Out = ["Me encantan tus gustos", "Obra de arte", "Soy fan de ello"]
 OutsF = [Insultos_Out, Fan_Out]
