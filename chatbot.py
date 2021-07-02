@@ -18,7 +18,7 @@ Created on Sun Jun 27 17:48:49 2021
 # Importamos librerias de nltk y keras para filtrado de StopWords y Tokenicación
 import nltk
 import numpy as np
-import tensorflow
+# import tensorflow
 import random
 import json
 
