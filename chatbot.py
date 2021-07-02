@@ -262,3 +262,17 @@ plt.show()
 # Módulo instanciador de entradas para el chatbot
 # Convierte el texto de entrada en la secuencia de valores enteros
 # con pad_sequences, elimina signos de interrogación y acentos
+
+def Instancer(inp):
+    inp = inp.lower()
+    inp = inp.replace('á', 'a')
+    inp = inp.replace('é', 'e')
+    inp = inp.replace('í', 'i')
+    inp = inp.replace('ó', 'o')
+    inp = inp.replace('ú', 'u')
+    inp = inp.replace('¿','')
+    inp = inp.replace('?','')
+    txt = [inp]
+    seq = tokenizer.texts_to_sequences(txt)
+    padded = pad_sequences(seq, maxlen=maxlen_user)
+    return padded
