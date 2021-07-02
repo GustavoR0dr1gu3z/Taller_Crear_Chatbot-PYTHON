@@ -18,7 +18,7 @@ Created on Sun Jun 27 17:48:49 2021
 # Importamos librerias de nltk y keras para filtrado de StopWords y Tokenicación
 import nltk
 import numpy as np
-# import tensorflow
+import tensorflow
 import random
 import json
 
@@ -389,11 +389,11 @@ def chat():
             # y asigna un tag (Categoria)
             # Se usa argmax para regresar aquel que tiene mayor peso
             results = model.predict(Instancer(inp))
-            results_index = numpy.argmax(results)
+            results_index = np.argmax(results)
             tag = labels[results_index]
 
             # Valor de la clase con mayor score
-            maxscore = numpy.max(results)
+            maxscore = np.max(results)
             print('Score del intent: '+ str(maxscore))
 
             # Con base en el tag se le asigna la intención del usuario
