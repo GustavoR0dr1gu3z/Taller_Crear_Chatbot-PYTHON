@@ -325,4 +325,4 @@ def Strong_grammars(inp):
 Paises = {'Mexico': 'Mexico', 'Francia':'Paris', 'España':'Madrid', 'Inglaterra':'Londres'}
 Resp_Paises = ['Me gustaria poder visitarlo', 'Es hermoso ese lugar', 'Lastima que los chatbots no podemos ir a esos lugares :c '] 
 
-Paises_Unknown = ['Lo siento, no conozco la capital de ese pais']
+Paises_Unknown = ['Lo siento, no conozco la capital de ese pais', 'Soy chafa, no se la respuesta', 'No c bro, disculpa']
