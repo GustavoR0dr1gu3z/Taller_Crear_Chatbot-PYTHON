@@ -326,3 +326,9 @@ Paises = {'Mexico': 'Mexico', 'Francia':'Paris', 'España':'Madrid', 'Inglaterra
 Resp_Paises = ['Me gustaria poder visitarlo', 'Es hermoso ese lugar', 'Lastima que los chatbots no podemos ir a esos lugares :c '] 
 
 Paises_Unknown = ['Lo siento, no conozco la capital de ese pais', 'Soy chafa, no se la respuesta', 'No c bro, disculpa']
+
+def Country(inp):
+    pais_act = 0
+    for pais in Paises.keys():
+        if inp.lower().count(pais.lower()) > 0:
+            
