@@ -276,3 +276,7 @@ def Instancer(inp):
     seq = tokenizer.texts_to_sequences(txt)
     padded = pad_sequences(seq, maxlen=maxlen_user)
     return padded
+
+
+# MÓDULOS DE DETECCIÓN DE GRAMÁTICAS DÉBILES
+Saludos_In = ["Hola", "Holi", "Cómo estás", "Que tal", "Como te va"]    
