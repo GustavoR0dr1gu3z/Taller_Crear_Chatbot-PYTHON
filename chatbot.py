@@ -215,7 +215,9 @@ model = Sequential()
 # Definir nuestra capa de embeddings, con 300 embeddings, con pesos del vector, adaptado a frases a entrenar
 embedding_layer = Embedding(vocal_size, 300, weights=[embedding_matrix], input_length= X_train.shape[1], traibable=False)
 model.add(embedding_layer)
+# Agregar capa LSTM, con 100 filtros (mas filtros, mas entiende, pero mas "lento"), proceso de droupout del 20%
 model.add(LSTM[100, dropout=0.2, recurrent_dropout=0.2])
+
 model.add(Dense(len(labels), activation='softmax'))
 
 
