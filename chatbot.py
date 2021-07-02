@@ -366,6 +366,7 @@ def chat():
 
         # Instrucción de fin de conversación (Cerrar el proceso)
         if inp.lower() == "Salir":
+            print("\nChatBot: Adios, vuelve prontooo\n")
             break
 
         # La gramatica fuerte es dominante (Si aparece no es necesario)
@@ -391,6 +392,9 @@ def chat():
 
             # Respuesta de la gramática débil
             weak = Weak_gramars(inp)
+
+            # Imprimiendo el tag de cada clase
+            print('Clase a la cual pertenece: '+str(label)+"\n")
 
             # Elegir una respuesta aleatoria de la Response Pool (Si supera el umbral)
             # Umbral de desición
