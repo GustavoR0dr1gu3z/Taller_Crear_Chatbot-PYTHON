@@ -301,3 +301,12 @@ def Weak_gramars(inp):
                 print('\nChatBot: '+random.choice(OutsD[index]) + '[Gramatica Débil]\n')
         index += 1
     return weak_act
+
+# MÓDULOS DE  DETECCIÓN DE GRAMATICAS FUERTES
+Insultos_In = []
+Fan_In = []
+InsF = [Insultos_In, Fan_In]
+
+Insultos_Out =[]
+Fan_Out = []
+OutsF = [Insultos_Out, Fan_Out]
