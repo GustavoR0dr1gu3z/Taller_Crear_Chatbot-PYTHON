@@ -323,4 +323,5 @@ def Strong_grammars(inp):
 
 # RECONOCIMIENTO DE ENTIDADES
 Paises = {'Mexico': 'Mexico', 'Francia':'Paris', 'España':'Madrid', 'Inglaterra':'Londres'}
-Resp_Paises = ['Me gustaria poder visitarlo', 'Es hermoso ese lugar']
+Resp_Paises = ['Me gustaria poder visitarlo', 'Es hermoso ese lugar', 'Lastima que los chatbots no podemos ir a esos lugares :c '] 
+
