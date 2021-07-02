@@ -404,9 +404,6 @@ def chat():
             # Respuesta de la gramática débil
             weak = Weak_gramars(inp)
 
-            # Imprimiendo el tag de cada clase
-            print('Clase a la cual pertenece: '+str(label)+"\n")
-
             # Elegir una respuesta aleatoria de la Response Pool (Si supera el umbral)
             # Umbral de desición
             if maxscore > 0.5:
