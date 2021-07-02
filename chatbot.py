@@ -350,5 +350,8 @@ def Raiz(inp):
     num = re.search(r'(\d+)', inp.lower())
     if num != None:
         num_act = 1 
-        print('\nChatBot: '+'La raiz cuadrada de '+num.group() + ' es: '+ str(round(math.sqrt(float(num.group())),4)) +'\n')
+        print('\nChatBot: '+'La raiz cuadrada de '+num.group() + ' es: '+ str(round(math.sqrt(float(num.group())),4)) + ', ' +random.choice(Resp_Raiz) +'\n')
+    if num_act == 0:
+        print('\nChatBot: '+random.choice(Raiz_Unknown)+'\n')        
+
         
