@@ -322,4 +322,4 @@ def Strong_grammars(inp):
 
 
 # RECONOCIMIENTO DE ENTIDADES
-Paises = {'Mexico': 'Mexico', 'Francia':'Paris'}
+Paises = {'Mexico': 'Mexico', 'Francia':'Paris', 'España':'Madrid', 'Inglaterra':'Londres'}
