@@ -331,4 +331,5 @@ def Country(inp):
     pais_act = 0
     for pais in Paises.keys():
         if inp.lower().count(pais.lower()) > 0:
-            
+            pais_act = 1 
+            print('\nChatBot: '+'La capital de '+ str(pais) + 'es: ' + str(Paises.get(pais)) + ', '+ random.choice(Resp_Paises))
