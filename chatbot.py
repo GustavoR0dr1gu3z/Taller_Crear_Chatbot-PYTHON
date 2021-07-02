@@ -383,3 +383,8 @@ def chat():
             # Valor de la clase con mayor score
             maxscore = numpy.max(results)
             print('Score del intent: '+ str(maxscore))
+
+            # Con base en el tag se le asigna la intención del usuario
+            for tg in data["intents"]:
+                if tg['tag'] = tag:
+                    responses = tg['responses']
