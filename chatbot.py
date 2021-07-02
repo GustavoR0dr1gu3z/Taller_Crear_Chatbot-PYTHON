@@ -407,3 +407,10 @@ def chat():
             else:
                 if weak == 0:
                     print('\nChatBot: Lo siento, pero no comprendí. ¿Podrías responder de otra forma?\n')
+
+print("Categorias del ChatBot: ")
+print('Categorias: '+str(str(labels)+'\n'))
+
+
+# ACTIVANDO EL CHATBOT
+chat()
