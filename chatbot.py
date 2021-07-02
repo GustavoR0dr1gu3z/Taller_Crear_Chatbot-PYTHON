@@ -221,3 +221,6 @@ model.add(Dense(len(labels), activation='softmax'))
 # Compilación del modelo
 model.compile(loss='categorical_crossentryopy', optimizer='adam', metrics=['accuracy'])
 print(model.summary())
+
+print('\nPalabras en el vocabulario: ')
+print(vocal_size)
