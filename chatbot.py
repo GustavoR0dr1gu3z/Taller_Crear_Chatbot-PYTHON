@@ -229,7 +229,7 @@ for word, index in tokenizer.word_index.items():
 model = Sequential()
 
 # Definir nuestra capa de embeddings, con 300 embeddings, con pesos del vector, adaptado a frases a entrenar
-embedding_layer = Embedding(vocal_size, 300, weights=[embedding_matrix], input_length= X_train.shape[1], traibable=False)
+embedding_layer = Embedding(vocab_size, 300, weights=[embedding_matrix], input_length=X_train.shape[1] , trainable=False)
 model.add(embedding_layer)
 
 # Agregar capa LSTM, con 100 filtros (mas filtros, mas entiende, pero mas "lento"), proceso de droupout del 20%
@@ -240,7 +240,7 @@ model.add(Dense(len(labels), activation='softmax'))
 
 
 # Compilación del modelo
-model.compile(loss='categorical_crossentryopy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 #print(model.summary())
 
 #print('\nPalabras en el vocabulario: ')
