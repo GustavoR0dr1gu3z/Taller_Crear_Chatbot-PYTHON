@@ -232,3 +232,8 @@ print(vocal_size)
 
 # Ajuste de los datos de entrenamiento al modelo creado
 history = model.fit(X_train, train_labels, epochs=30, batch_size=8, verbose=1)
+
+# Cálculo de los porcentajes de Eficiencia y Pérdida
+score = model.evaluate(X_train, train_labels, verbose=1)
+print('\nTest Loss: ', score[0])
+print('\nTest Accuracy: ', score[1])
