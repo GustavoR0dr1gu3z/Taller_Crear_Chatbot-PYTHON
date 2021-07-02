@@ -263,6 +263,7 @@ plt.show()
 # Convierte el texto de entrada en la secuencia de valores enteros
 # con pad_sequences, elimina signos de interrogación y acentos
 
+# Convierte el texto a minusculas, basicamente para replicar el texto al entrenamiento
 def Instancer(inp):
     inp = inp.lower()
     inp = inp.replace('á', 'a')
