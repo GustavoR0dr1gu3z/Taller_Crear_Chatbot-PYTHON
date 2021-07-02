@@ -51,6 +51,10 @@ from keras.layers.core import Dense
 from keras.layers import LSTM
 from keras.layers.embeddings import Embedding
 
+# Finalmente imprimiremos la eficiencia y pérdida del modelo
+# Epoca por epoca para ver su evolución
+import matplotlib.pyplot as plt
+
 
 # Lectura del JSON, con intents y respuestas de cada clase
 with open('data/intents.json', encoding= 'utf-8') as file:
