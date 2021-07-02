@@ -393,6 +393,7 @@ def chat():
             weak = Weak_gramars(inp)
 
             # Elegir una respuesta aleatoria de la Response Pool (Si supera el umbral)
+            # Umbral de desición
             if maxscore > 0.5:
 
                 # Si se detecta una intención que esté asociada a entidades se envía a 
