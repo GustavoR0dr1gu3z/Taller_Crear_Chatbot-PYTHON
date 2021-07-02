@@ -255,3 +255,10 @@ plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.legend(['Acc', 'Loss'])
 plt.show()
+
+
+# PRUEBAS DEL MODELO DEL CHATBOT
+
+# Módulo instanciador de entradas para el chatbot
+# Convierte el texto de entrada en la secuencia de valores enteros
+# con pad_sequences, elimina signos de interrogación y acentos
