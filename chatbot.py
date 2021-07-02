@@ -310,3 +310,13 @@ InsF = [Insultos_In, Fan_In]
 Insultos_Out =["Tu lo serás", "¿Con esa boquita comes?", "Me ofendes", "Me la pelas"]
 Fan_Out = ["Me encantan tus gustos", "Obra de arte", "Soy fan de ello"]
 OutsF = [Insultos_Out, Fan_Out]
+
+def Strong_grammars(inp):
+    index = 0
+    strong_act = 0
+    for categoria in InsF:
+        for gramatica in categoria:
+            if inp.lower().count(gramatica.lower()) > 0:
+                strong_act = 1 
+                print('\nChatBot: '+random.choice(OutsF[index]) + '[Gramatica Fuerte]\n')
+                
