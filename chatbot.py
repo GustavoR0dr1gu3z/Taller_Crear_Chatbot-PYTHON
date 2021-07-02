@@ -286,3 +286,4 @@ InsD = [Saludos_In, Despedidas_In, Gracias_In]
 
 Saludos_Out = ["Hola, ¿Cómo estás?", "Un gusto de saludarte", "Me da gusto verte de nuevo", "Que pedo"]
 Despedidas_Out  = ["Nos vemos, fue un gutso", "Que te vaya muy bien", "Regresa pronto, adios"]
+Gracias_Out = ["Por nada, es un placer", "Me da mucho gusto poder ayudar", "Denada, para eso estoy"]
