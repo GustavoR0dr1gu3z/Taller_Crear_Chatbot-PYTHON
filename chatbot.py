@@ -55,6 +55,10 @@ from keras.layers.embeddings import Embedding
 # Epoca por epoca para ver su evolución
 import matplotlib.pyplot as plt
 
+# Librerias para los modulos de reconocimientos de entidades con numeros
+import re 
+import math
+
 
 # Lectura del JSON, con intents y respuestas de cada clase
 with open('data/intents.json', encoding= 'utf-8') as file:
@@ -336,4 +340,4 @@ def Country(inp):
     if pais_act == 0:
         print('\nChatbot: ' + random.choice(Paises_Unknown)+'\n')
 
-        
+# MODULO DE RECONOCIMIENTO DE ENTIDAD DE NUMEROS
