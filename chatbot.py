@@ -397,4 +397,12 @@ def chat():
 
                 # Si se detecta una intención que esté asociada a entidades se envía a 
                 # su respectivo módulo
-                
+                if tag == "Capital":
+                    Country(inp)
+                elif tag = "Raiz_Cuadrada":
+                    Raiz(inp)
+                else:
+                    print('\nChatBot: '+ str(random.choice(responses)) + '[' + str(tag) + ']\n')
+            else:
+                if weak == 0:
+                    print('\nChatBot: Lo siento, pero no comprendí. ¿Podrías responder de otra forma?\n')
