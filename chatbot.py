@@ -388,3 +388,13 @@ def chat():
             for tg in data["intents"]:
                 if tg['tag'] = tag:
                     responses = tg['responses']
+
+            # Respuesta de la gramática débil
+            weak = Weak_gramars(inp)
+
+            # Elegir una respuesta aleatoria de la Response Pool (Si supera el umbral)
+            if maxscore > 0.5:
+
+                # Si se detecta una intención que esté asociada a entidades se envía a 
+                # su respectivo módulo
+                
