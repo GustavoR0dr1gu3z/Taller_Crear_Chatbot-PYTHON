@@ -87,7 +87,7 @@ for intent in data['intents']:
     if intent['tag'] not in labels:
         labels.append(intent['tag'])        
     
-print(texts)    
+#print(texts)    
 
 
 # Daremos valor a cada una de las etiquetas
@@ -103,14 +103,14 @@ for intent in data['intents']:
         # En la lista de clases o labels
         output.append(labels.index(intent['tag']))
 
-print("Vector de salidas Y:")        
-print(output)
+#print("Vector de salidas Y:")        
+#print(output)
 
 
 # Generamos la matriz de salidas
 train_labels = to_categorical(output, num_classes=len(labels))
-print('Matriz de salidas')
-print(train_labels)
+#print('Matriz de salidas')
+#print(train_labels)
 
 # Palabras que no me van a a portar nada para yo entender las frases de usuarios
 # Palabras que no significan nada: los, las, etc. Se repiten mucho, pero no aportan NADA
@@ -155,7 +155,7 @@ for sen in texts:
     X.append(TreebankWordDetokenizer().detokenize(result))
     
     # Imprimirlos la lista de enunciados que resultan
-    print(X)
+    #print(X)
     
     
     # CANTIDAD DE PALABRAS MÁXIMAS POR VECTOR DE ENTRADA
@@ -174,8 +174,8 @@ for sen in texts:
     # Especificamos la matriz (con padding de posiciones iguales a maxlen)
     X_train = pad_sequences(X_seq, padding='post', maxlen=maxlen_user)
     
-    print("Matriz de entrada: ")
-    print(X_train)
+    #print("Matriz de entrada: ")
+    #print(X_train)
     
 
 # Generar un diccionario de embeddings    
@@ -244,10 +244,10 @@ model.add(Dense(len(labels), activation='softmax'))
 
 # Compilación del modelo
 model.compile(loss='categorical_crossentryopy', optimizer='adam', metrics=['accuracy'])
-print(model.summary())
+#print(model.summary())
 
-print('\nPalabras en el vocabulario: ')
-print(vocal_size)
+#print('\nPalabras en el vocabulario: ')
+#print(vocal_size)
 
 # ENTRENAMIENTO DE LOS DATOS QUE PROPORCIONE
 
@@ -256,8 +256,8 @@ history = model.fit(X_train, train_labels, epochs=30, batch_size=8, verbose=1)
 
 # Cálculo de los porcentajes de Eficiencia y Pérdida
 score = model.evaluate(X_train, train_labels, verbose=1)
-print('\nTest Loss: ', score[0])
-print('\nTest Accuracy: ', score[1])
+#print('\nTest Loss: ', score[0])
+#print('\nTest Accuracy: ', score[1])
 
 # GRAFICAR LA EFICIENCIA Y PERDIDA EN CADA EPOCA
 
@@ -269,7 +269,7 @@ plt.title('Model Accuracy')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.legend(['Acc', 'Loss'])
-plt.show()
+#plt.show()
 
 
 # PRUEBAS DEL MODELO DEL CHATBOT
