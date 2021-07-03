@@ -331,7 +331,8 @@ def Strong_grammars(inp):
             if inp.lower().count(gramatica.lower()) > 0:
                 strong_act = 1 
                 print('\nChatBot: '+random.choice(OutsF[index]) + '[Gramatica Fuerte]\n')
-
+        index += 1
+    return strong_act
 
 # RECONOCIMIENTO DE ENTIDADES
 Paises = {'Mexico': 'Mexico', 'Francia':'Paris', 'España':'Madrid', 'Inglaterra':'Londres'}
@@ -359,7 +360,7 @@ def Raiz(inp):
     num = re.search(r'(\d+)', inp.lower())
     if num != None:
         num_act = 1 
-        print('\nChatBot: '+'La raiz cuadrada de '+num.group() + ' es: '+ str(round(math.sqrt(float(num.group())),4)) + ', ' +random.choice(Resp_Raiz) +'\n')
+        print('\nChatBot: '+'La raiz cuadrada de '+num.group() + ' es: '+ str(round(math.sqrt(float(num.group())),4)) + ' ' + random.choice(Resp_Raiz) + '[Entidad]\n')
     if num_act == 0:
         print('\nChatBot: '+random.choice(Raiz_Unknown)+'\n')        
 
@@ -373,7 +374,7 @@ def chat():
         inp = input("   Tú: ")
 
         # Instrucción de fin de conversación (Cerrar el proceso)
-        if inp.lower() == "Salir":
+        if inp.lower() == "salir":
             print("\nChatBot: Adios, vuelve prontooo\n")
             break
 
