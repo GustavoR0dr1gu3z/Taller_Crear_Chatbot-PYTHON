@@ -310,7 +310,7 @@ def Weak_gramars(inp):
         for gramatica in categoria:
             if inp.lower().count(gramatica.lower()) > 0:
                 weak_act = 1
-                print('\nChatBot: '+random.choice(OutsD[index]) + '[Gramatica Débil]\n')
+                print('\nChatBot: '+random.choice(OutsD[index]) + '  [Gramatica Débil]\n')
         index += 1
     return weak_act
 
@@ -330,7 +330,7 @@ def Strong_grammars(inp):
         for gramatica in categoria:
             if inp.lower().count(gramatica.lower()) > 0:
                 strong_act = 1 
-                print('\nChatBot: '+random.choice(OutsF[index]) + '[Gramatica Fuerte]\n')
+                print('\nChatBot: '+random.choice(OutsF[index]) + '  [Gramatica Fuerte]\n')
         index += 1
     return strong_act
 
@@ -345,7 +345,7 @@ def Country(inp):
     for pais in Paises.keys():
         if inp.lower().count(pais.lower()) > 0:
             pais_act = 1 
-            print('\nChatBot: '+'La capital de '+ str(pais) + 'es: ' + str(Paises.get(pais)) + ', '+ random.choice(Resp_Paises)+'\n')
+            print('\nChatBot: '+'La capital de '+ str(pais) + ' es: ' + str(Paises.get(pais)) + ', '+ random.choice(Resp_Paises)+'\n')
     if pais_act == 0:
         print('\nChatbot: ' + random.choice(Paises_Unknown)+'\n')
 
@@ -360,7 +360,7 @@ def Raiz(inp):
     num = re.search(r'(\d+)', inp.lower())
     if num != None:
         num_act = 1 
-        print('\nChatBot: '+'La raiz cuadrada de '+num.group() + ' es: '+ str(round(math.sqrt(float(num.group())),4)) + ' ' + random.choice(Resp_Raiz) + '[Entidad]\n')
+        print('\nChatBot: '+'La raiz cuadrada de '+num.group() + ' es: '+ str(round(math.sqrt(float(num.group())),4)) + ' ' + random.choice(Resp_Raiz) + '  [Entidad]\n')
     if num_act == 0:
         print('\nChatBot: '+random.choice(Raiz_Unknown)+'\n')        
 
