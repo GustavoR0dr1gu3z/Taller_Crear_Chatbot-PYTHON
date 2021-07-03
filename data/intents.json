@@ -1,6 +1,11 @@
 {"intents": [
     {"tag": "Capital",
-     "patterns": ["¿Cuál es la capital de Fráncia?", "¿Sabes cuál es la capital para España?", "En las capitales del mundo, ¿Cuál le pertenece a Inglaterra?", "Si te pregunto por la capital de México, ¿Cuál es?", "Háblame de cuál es la capital de Canadá"],
+     "patterns": ["¿Cuál es la capital de Fráncia?", 
+                "¿Sabes cuál es la capital para España?", 
+                "En las capitales del mundo, ¿Cuál le pertenece a Inglaterra?", 
+                "Si te pregunto por la capital de México, ¿Cuál es?", 
+                "Háblame de cuál es la capital de Canadá"],
+                
      "responses": ["La capital es..."]
     },
     {"tag": "Raiz_Cuadrada",
