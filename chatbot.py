@@ -370,7 +370,7 @@ def Raiz(inp):
 def chat():
     print("\nChatBot: Hola soy un chatbot, comienza a hablar conmigo\n")
     while True:
-        inp = input("    Tú: ")
+        inp = str(input("    Tú: "))
 
         # Instrucción de fin de conversación (Cerrar el proceso)
         if inp.lower() == "Salir":
