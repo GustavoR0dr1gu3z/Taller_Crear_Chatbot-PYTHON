@@ -257,7 +257,7 @@ score = model.evaluate(X_train, train_labels, verbose=1)
 #print('\nTest Accuracy: ', score[1])
 
 # GRAFICAR LA EFICIENCIA Y PERDIDA EN CADA EPOCA
-
+'''
 plt.figure(figsize=(12.5))
 plt.ylim(-0.1,1.1)
 plt.plot(history.history['accuracy'])
@@ -266,8 +266,8 @@ plt.title('Model Accuracy')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.legend(['Acc', 'Loss'])
-#plt.show()
-
+plt.show()
+'''
 
 # PRUEBAS DEL MODELO DEL CHATBOT
 
